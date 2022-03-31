@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="script/player.js" defer></script>
+    <script src="script/opponent.js" defer></script>
+    <script src="script/playAgain.js" defer></script>
+    <script src="script/popup.js" defer></script>
+    <script src="script/dice.js" defer></script>
+    <title>Comp2132 || Hossein Rahmani  </title>
+</head>
+<body class="main-page">
+    <div class="main-grid">
+        <div class="container">
+            <div class="dice-wrap">
+                <img src="images/dice/dice-1.png" class="player-first-dice">
+                <img src="images/dice/dice-6.png" class="player-second-dice">
+            </div>
+            <div >
+                <h4>Player box</h4>
+                <p id="player-score-result">Player Game Score</p>
+                <p id="player-score-total"></p>
+            </div>
+            <div >
+                <button class="btn" id="roll">Roll the dice</button>
+                <button class="btn" id="new-game">New Game</button>
+            </div>
+        </div>
+        <div class="container02">
+            <div >
+                <h4>Opponent Box</h4>
+                <img src="images/dice/dice-1.png" class="opponent-first-dice">
+                <img src="images/dice/dice-6.png" class="opponent-second-dice">
+            </div>
+            <div class="result">
+                <p id="opponent-score-result">Opponent Game Score</p>
+                <p id="Opponent-score-total"></p>
+            </div>
+    </div>
+    </div>
+    <section id='pop-up'>
+		<div>
+			<button id="close-pop-up">&#x2715;</button>
+			<h2>Thanks for Playing</h2>
+			<p id="show-result"></p>				
+	
+			<button class="btn" id="play-again">play Again!</button>
+	   </div>
+	</section>    
+    
+</body>
+</html>
